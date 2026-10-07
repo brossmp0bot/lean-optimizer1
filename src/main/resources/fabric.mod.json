@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "leanoptimizer",
+	"version": "${version}",
+	"name": "Lean Optimizer",
+	"description": "Adaptive FPS tuning for Minecraft 26.2: lowers render and entity distance when FPS drops, restores them when there is headroom, and caps the frame rate while the window is unfocused. Works alongside Sodium.",
+	"authors": [
+		"You"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/leanoptimizer/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.leanoptimizer.client.LeanOptimizerClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
