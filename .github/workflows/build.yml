@@ -3,9 +3,6 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: lean-optimizer
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -17,4 +14,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: lean-optimizer
-          path: lean-optimizer/build/libs/
+          path: build/libs/
